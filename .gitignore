@@ -19,6 +19,7 @@ out/
 # IDE and editor files
 .idea/
 .vscode/
+.vs/
 *.swp
 *.swo
 .DS_Store
