@@ -6,10 +6,11 @@ Welche Funktionen haben wir hier?
 Wer macht was?
 
 Wie ist die Git Branch Struktur?
-- main ()
-- staging
-- feature/...
-- bugfix/...
+- main (verteilbare Anwendung)
+- staging (Testumgebung)
+- feature/... (Features)
+- bugfix/... (Bugfixes)
+
 
 
 ...
