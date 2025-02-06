@@ -13,7 +13,7 @@ Welche Funktionen haben wir hier?
 Wer macht was?
 - Elena: HTML css
 - Konstantin: html css
-- Michael: server logic, javascript
+- Michael: python, javascript
 - Olha: sie macht ihre eigenes entwurf
 - Mario: HTML
 
