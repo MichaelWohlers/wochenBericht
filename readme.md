@@ -25,7 +25,7 @@ Wie ist die Git Branch Struktur?
 
 Erste Einrichtung (einmalig)
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/MichaelWohlers/wochenBericht.git
    cd your-repo
    ```
 Neue Funktion starten
