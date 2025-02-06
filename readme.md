@@ -1,3 +1,11 @@
+Start App:
+1. pip install flask
+2. cd app
+3. flask run
+4. open http://127.0.0.1:5000/
+
+
+
 Was genau machen wir hier?
 - Wir machen eine Website für ein wochen bericht
 
