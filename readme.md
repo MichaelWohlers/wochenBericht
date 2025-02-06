@@ -8,13 +8,14 @@ Welche Funktionen haben wir hier?
 - anzeigen der eingaben
 - löschen der eingaben
 - editieren der eingaben
+- exportieren pdf, word, excel
 
 Wer macht was?
 - Elena: HTML css
 - Konstantin: html css
 - Michael: server logic, javascript
-- Olha: macht eignes entwurf
-- Mario: HTMLS
+- Olha: sie macht ihre eigenes entwurf
+- Mario: HTML
 
 Wie ist die Projektstruktur?
 - app/ (server logic)
@@ -62,14 +63,3 @@ Neue Funktion starten
    git push origin your-feature-branch
    ```
 
-4. Arbeit einreichen
-   - Create Pull Request on GitHub
-   - Base: staging
-   - Compare: your feature branch
-   - Request review
-
-5. Regeln
-   - Never push to main or staging directly
-   - Keep commits focused and clear
-   - Update from staging daily
-   - Ask for help if stuck!
