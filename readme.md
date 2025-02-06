@@ -3,7 +3,18 @@ Was genau machen wir hier?
 
 Welche Funktionen haben wir hier?
 
+- formular für den wochenbericht
+- speichern der eingaben
+- anzeigen der eingaben
+- löschen der eingaben
+- editieren der eingaben
+
 Wer macht was?
+- Elena: HTML css
+- Konstantin: html css
+- Michael: server logic, javascript
+- Olha: macht eignes entwurf
+- Mario: HTMLS
 
 Wie ist die Projektstruktur?
 - app/ (server logic)
