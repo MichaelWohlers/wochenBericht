@@ -1,2 +1,2 @@
 
-'js/home.js'
+'js/main.js'

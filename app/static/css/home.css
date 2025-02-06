@@ -1,11 +1,17 @@
-.name {
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-}
-
-.ausbildungsbetrieb {
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-}
+body {width:19cm}
+h1 {font-size: 16px}
+table {
+    font-size:14px;
+    border-collapse: collapse;
+    width: 100%;}
+td {
+    border:1px solid black;
+    padding:5px;
+    text-align:center;
+    width:auto}
+th {font-weight:normal;
+    text-decoration:overline}
+input {
+    width:100%;
+    border:none}
+input[type="date"] {text-transform: uppercase;}

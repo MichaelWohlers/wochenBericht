@@ -1,15 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Ausbildungsnachweis</title>
-</head>
-<style>
-
-</style>
-<body>
-    <div>Name des Auszubildenden: </div>
-    <div>Ausbildungsbetrieb: </div>
-    <div>Ausbildungsberuf: </div>
-    <div>Berichtszeitraum: </div>
-</body>
+<html>
+	<head>
+		<title>Ausbildungsnachweis</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+	</head>
+    <style>body {width:19cm}
+        h1 {font-size: 16px}
+        table {
+            font-size:14px;
+            border-collapse: collapse;
+            width: 100%;}
+        td {
+            border:1px solid black;
+            padding:5px;
+            text-align:center;
+            width:auto}
+        th {font-weight:normal;
+            text-decoration:overline}
+        input {
+            width:100%;
+            border:none}
+        input[type="date"] {text-transform: uppercase;}</style>
+	<body>
+		<h1>Ausbildungsnachweis (täglich)</h1>
+		<table class="nachweis">
+			<tr>
+				<td>Name der/des Auszubildenden:</td>
+				<td><input type="text"></input></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>Ausbildungsjahr:</td>
+				<td><input type="number"></input></td>
+				<td>Abteilung:</td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Ausbildungswoche vom:</td>
+				<td><input type="date"></input></td>
+				<td>bis:</td>
+				<td><input type="date"></input></td>
+			</tr>
+		</table>
+		<br>
+		<table class="nachweis">
+			<tr>
+				<td>Wochentag</td>
+				<td>Betriebliche Tätigkeiten, Unterweisungen bzw. überbetriebliche Unterweisungen, betrieblicher Unterricht, sonstige Schulungen, Themen des Berufsschulunterrichts</td>
+				<td>Stunden</td>
+				<td>Lfd. Nummer: Bezug zum Ausbildungs-rahmenplan (optionale Angabe)</td>
+			</tr>
+			<tr>
+				<td>Montag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Dienstag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Mittwoch</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Donnerstag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Freitag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Samstag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td>Sonntag</td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="text"></input></td>
+				<td><input type="number"></input></td>
+				<td><input type="text"></input></td>
+			</tr>
+		</table>
+		<br>
+		<p>Durch die nachfolgende Unterschrift wird die Richtigkeit und Vollständigkeit der obigen Angaben bestätigt.</p>
+		<br>
+		<br>
+		<table class=unterschrift>
+				<th>Datum, Unterschrift Auszubildende/r</th>
+				<th>Datum, Unterschrift Ausbildender oder Ausbilderin/Ausbilder</th>
+			</tr>
+		</table>
+	</body>
 </html>
