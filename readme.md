@@ -3,25 +3,12 @@ Was genau machen wir hier?
 
 Welche Funktionen haben wir hier?
 
-- formular für den wochenbericht
-- speichern der eingaben
-- anzeigen der eingaben
-- löschen der eingaben
-- editieren der eingaben
-- exportieren pdf, word, excel
 
 Wer macht was?
-- Elena: HTML css
-- Konstantin: html css
-- Michael: python, javascript
-- Olha: sie macht ihre eigenes entwurf
-- Mario: HTML
+
 
 Wie ist die Projektstruktur?
-- app/ (server logic)
-- static/css/ (css)
-- static/js/ (js)
-- templates/ (html)
+
 
 Wie ist die Git Branch Struktur?
 - main (verteilbare Anwendung)

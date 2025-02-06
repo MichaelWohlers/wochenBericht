@@ -1,16 +1,50 @@
-body {width:19cm}
+body {
+    width:75%;
+    margin: 0 auto;  /* Top/bottom 0, left/right auto */
+  
+}
+
 h1 {font-size: 16px}
-table {
+
+.nachweis {
     font-size:14px;
     border-collapse: collapse;
     width: 100%;}
-td {
+
+.nachweis td {
     border:1px solid black;
     padding:5px;
     text-align:center;
     width:auto}
-th {font-weight:normal;
-    text-decoration:overline}
+
+.nachweis th {
+    border:1px solid black;
+    padding:5px;
+    text-align:center;
+    width:auto}  
+
+.unterschrift th {
+    font-weight:normal;
+    width: 50%;
+ }
+
+.signature-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  /* Creates space between the lines */
+}
+
+.signature-line-left {
+    width: 48%;
+    height: 1px;
+    background-color: black;
+}
+
+.signature-line-right {
+    width: 48%;
+    height: 1px;
+    background-color: black;
+}
 input {
     width:100%;
     border:none}

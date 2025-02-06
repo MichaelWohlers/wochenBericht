@@ -1,34 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="de">
 	<head>
+        <meta charset="UTF-8">
 		<title>Ausbildungsnachweis</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 	</head>
-    <style>body {width:19cm}
-        h1 {font-size: 16px}
-        table {
-            font-size:14px;
-            border-collapse: collapse;
-            width: 100%;}
-        td {
-            border:1px solid black;
-            padding:5px;
-            text-align:center;
-            width:auto}
-        th {font-weight:normal;
-            text-decoration:overline}
-        input {
-            width:100%;
-            border:none}
-        input[type="date"] {text-transform: uppercase;}</style>
+    
 	<body>
 		<h1>Ausbildungsnachweis (täglich)</h1>
 		<table class="nachweis">
 			<tr>
-				<td>Name der/des Auszubildenden:</td>
-				<td><input type="text"></input></td>
+				<td colspan="2">Name der/des Auszubildenden:</td>
+				<td colspan="2"><input type="text"></input></td>
 			</tr>
-		</table>
-		<table>
 			<tr>
 				<td>Ausbildungsjahr:</td>
 				<td><input type="number"></input></td>
@@ -45,146 +29,132 @@
 		<br>
 		<table class="nachweis">
 			<tr>
-				<td>Wochentag</td>
-				<td>Betriebliche Tätigkeiten, Unterweisungen bzw. überbetriebliche Unterweisungen, betrieblicher Unterricht, sonstige Schulungen, Themen des Berufsschulunterrichts</td>
-				<td>Stunden</td>
-				<td>Lfd. Nummer: Bezug zum Ausbildungs-rahmenplan (optionale Angabe)</td>
+				<th>Wochentag</th>
+				<th>Betriebliche Tätigkeiten, Themen des Berufsschulunterrichts</th>
+				<th>Stunden</th>
+				<th>Unterricht / Unternehmen</th>
+                <th>Zeile hinzufügen</th>
 			</tr>
 			<tr>
 				<td>Montag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+				<td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="montag">+</button></td>
 			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
+
 			<tr>
 				<td>Dienstag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="dienstag">+</button></td>
 			</tr>
 			<tr>
 				<td>Mittwoch</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="mittwoch">+</button></td>
 			</tr>
 			<tr>
 				<td>Donnerstag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="donnerstag">+</button></td>
 			</tr>
 			<tr>
 				<td>Freitag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="freitag">+</button></td>
 			</tr>
 			<tr>
 				<td>Samstag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="samstag">+</button></td>
 			</tr>
 			<tr>
 				<td>Sonntag</td>
 				<td><input type="text"></input></td>
 				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
+                <td>
+                    <select>
+                        <option value="Unterricht">Unterricht</option>
+                        <option value="Unternehmen">Unternehmen</option>
+                    </select>
+                </td>
+                <td><button type="button" class="add-row" data-day="sonntag">+</button></td>
 			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td><input type="text"></input></td>
-				<td><input type="number"></input></td>
-				<td><input type="text"></input></td>
-			</tr>
+			
 		</table>
+        <br>
+        <table>
+            <tr>
+                <td>Gesamtstunden:</td>
+                <td id="gesamtstunden"><input type="number"></input></td>
+                <td>Fehltage:</td>
+                <td id="fehltage"><input type="number"></input></td>
+                <td>Unterrichtsstunden:</td>
+                <td id="unterrichtsstunden"><input type="number"></input></td>
+                <td>Unternehmensstunden:</td>
+                <td id="unternehmensstunden"><input type="number"></input></td>
+            </tr>
+        </table>
+
 		<br>
 		<p>Durch die nachfolgende Unterschrift wird die Richtigkeit und Vollständigkeit der obigen Angaben bestätigt.</p>
 		<br>
 		<br>
+
+        <div class="signature-container">
+            <div class="signature-line-left"></div>
+            <div class="signature-line-right"></div>
+        </div>
+
 		<table class=unterschrift>
 				<th>Datum, Unterschrift Auszubildende/r</th>
 				<th>Datum, Unterschrift Ausbildender oder Ausbilderin/Ausbilder</th>
 			</tr>
 		</table>
+
+
+    <script src="{{ url_for('static', filename='js/home.js') }}"></script>
+
 	</body>
+    <button type="button">PDF Herunterladen</button>
 </html>
