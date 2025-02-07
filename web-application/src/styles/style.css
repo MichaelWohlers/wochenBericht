@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Schriftart für die gesamte Seite */
+    font-family: 'Calibri', sans-serif; /* Schriftart für die gesamte Seite */
     background-color: var(--background-light); /* Hintergrundfarbe für den hellen Modus */
     color: var(--text-light); /* Textfarbe für den hellen Modus */
     margin: 0; /* Kein äußerer Abstand */
@@ -98,7 +98,7 @@ textarea {
 
 button {
     display: block; /* Block-Layout */
-    width: 100%; /* Volle Breite */
+    width: 25%; /* Volle Breite */
     padding: 10px; /* Innerer Abstand von 10 Pixeln */
     background-color: var(--primary-light); /* Primärfarbe für den hellen Modus */
     color: var(--text-dark); /* Textfarbe für den dunklen Modus */
@@ -107,6 +107,7 @@ button {
     font-size: 16px; /* Schriftgröße von 16 Pixeln */
     cursor: pointer; /* Zeigt einen Zeiger-Cursor an */
     transition: background-color 0.3s; /* Weicher Übergang bei Farbwechsel */
+    margin: 0 auto; /* Zentriert den Button horizontal */
 }
 
 button:hover {
